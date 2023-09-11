@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Panal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- TO-CHANGE -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+    <!-- TO-CHANGE -->
+</head>
+
+<body>
+
+
+    <div class="container-fluid p-0 bg-light">
+        <div class="row fullHighetContainer w-100 p-0 m-0">
+
+            <!-- side navbar -->
+            <div class="col-1 myBtn p-2 h-100"></div>
+            <!-- side navbar -->
+
+            <!-- main container -->
+            <div class="col-11 p-0">
+
+                <!-- top control-panal -->
+                <div class="shadow w-100 py-4 bg-white">
+                    <div class="d-flex align-items-center w-100">
+
+                        <!-- burgerMenu button -->
+                        <div id="btnToggleSideNav" class="flex-fill topControlPanalItems d-flex justify-content-start">
+                            <button class="btn btn-sm myBtn px-3 ms-5" type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFF"
+                                    class="bi bi-chevron-expand burgerMenu visually-hidden" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z" />
+                                </svg>
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFF"
+                                    class="bi bi-chevron-contract burgerMenu " viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M3.646 13.854a.5.5 0 0 0 .708 0L8 10.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zm0-11.708a.5.5 0 0 1 .708 0L8 5.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <!-- burgerMenu button -->
+
+                        <!-- search bar -->
+                        <div class="flex-fill topControlPanalItems d-flex justify-content-center">
+                            <div class="input-group w-50">
+                                <input id="inputSearch" type="text" class="form-control bg-light"
+                                    placeholder="search for a task Title/Decription/Tag"
+                                    aria-label="search for a task Title/Decription/Tag">
+                                <span class="input-group-text btn btn-sm myBtn">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff"
+                                        class="bi bi-search" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                    </svg>
+
+                                </span>
+                            </div>
+                        </div>
+                        <!-- search bar -->
+
+                        <!-- notification area -->
+                        <div class="flex-fill d-flex align-items-center justify-content-end p-0">
+
+                            <!-- Menstions -->
+                            <button class="rounded-circle btn btn-sm myBtn position-relative text-white fs-5 me-4"
+                                type="submit">
+                                @
+                                <span id="txtMenstions"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    88+
+                                </span>
+                            </button>
+                            <!-- Menstions -->
+
+                            <!-- AssignedToMe -->
+                            <button class="rounded-circle btn btn-sm myBtn position-relative text-white fs-5"
+                                type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-chat-square-quote-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                    <path
+                                        d="M7.066 4.76A1.665 1.665 0 0 0 4 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112zm4 0A1.665 1.665 0 0 0 8 5.668a1.667 1.667 0 0 0 2.561 1.406c-.131.389-.375.804-.777 1.22a.417.417 0 1 0 .6.58c1.486-1.54 1.293-3.214.682-4.112z" />
+                                </svg>
+                                <span id="txtAssignedToMe"
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    99+
+                                </span>
+                            </button>
+                            <!-- AssignedToMe -->
+
+                            <div class="verticalLine mx-5"> </div>
+
+
+                            <div class="dropdown">
+                                <button class="circular_image btn myBtn dropdown-toggle p-0 me-5" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="#FFF"
+                                        class="bi bi-person-fill" viewBox="8 0 7 24">
+                                        <path
+                                            d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                                    </svg>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+
+
+
+
+                        </div>
+                        <!-- notification area -->
+
+                    </div>
+                </div>
+                <!-- top control-panal -->
+
+
+                <!-- dashboard -->
+                <div class="d-flex h-100 w-100">
+
+                    <!-- summary-board -->
+                    <div class="align-self-start p-2 w-100">
+
+                        <div class="row p-5">
+
+
+                            <!-- All Work Spaces Card -->
+                            <div class="col-xl-3 col-md-6 mb-3">
+                                <div class="card mySummaryCard myCardSecondry shadow p-3">
+                                    <div class="d-flex flex-row">
+                                        <p class="fs-4">All Work Spaces</p>
+                                        <div class="d-flex flex-fill justify-content-end">
+                                            <p class="fs-4 text-black-50">Total Tasks: <strong
+                                                    class="text-black">73</strong> </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-2">
+
+                                        <div class="myProgressBarLabel txtSecondary fs-5 me-2">TODO</div>
+
+                                        <div class="progress flex-fill" role="progressbar"
+                                            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100" style="height: 28px">
+
+                                            <div id="progressbarTodo"
+                                                class="progress-bar bgSecondary progress-bar-striped progress-bar-animated fs-5"
+                                                style="width: 25%"> 25%</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-2">
+
+                                        <div class="myProgressBarLabel txtAccent fs-5 me-2">IN-PROGRESS</div>
+
+                                        <div class="progress flex-fill" role="progressbar"
+                                            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100" style="height: 28px">
+
+                                            <div id="progressbarInProgress"
+                                                class="progress-bar bgAccent progress-bar-striped progress-bar-animated fs-5"
+                                                style="width: 50%">50%</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-2">
+
+                                        <div class="myProgressBarLabel txtPrimary fs-5 me-2">DONE</div>
+
+                                        <div class="progress flex-fill" role="progressbar"
+                                            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100" style="height: 28px">
+
+                                            <div id="progressbarDone"
+                                                class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5"
+                                                style="width: 75%">75%</div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- All Work Spaces Card -->
+
+                            <!-- Current Work Space Card -->
+                            <div class="col-xl-3 col-md-6 mb-3">
+                                <div class="card mySummaryCard myCardPrimary shadow p-3">
+
+                                    <div class="d-flex flex-row">
+                                        <p class="fs-4">Current Work Space</p>
+                                        <div class="d-flex flex-fill justify-content-end">
+                                            <p class="fs-4 text-black-50">Total Tasks: <strong
+                                                    class="text-black">38</strong> </p>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-2">
+
+                                        <div class="myProgressBarLabel txtSecondary fs-5 me-2">TODO</div>
+
+                                        <div class="progress flex-fill" role="progressbar"
+                                            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100" style="height: 28px">
+
+                                            <div id="progressbarTodo"
+                                                class="progress-bar bgSecondary progress-bar-striped progress-bar-animated fs-5"
+                                                style="width: 25%"> 25%</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-2">
+
+                                        <div class="myProgressBarLabel txtAccent fs-5 me-2">IN-PROGRESS</div>
+
+                                        <div class="progress flex-fill" role="progressbar"
+                                            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100" style="height: 28px">
+
+                                            <div id="progressbarInProgress"
+                                                class="progress-bar bgAccent progress-bar-striped progress-bar-animated fs-5"
+                                                style="width: 50%">50%</div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="d-flex flex-row align-items-center mb-2">
+
+                                        <div class="myProgressBarLabel txtPrimary fs-5 me-2">DONE</div>
+
+                                        <div class="progress flex-fill" role="progressbar"
+                                            aria-label="Animated striped example" aria-valuenow="75" aria-valuemin="0"
+                                            aria-valuemax="100" style="height: 28px">
+
+                                            <div id="progressbarDone"
+                                                class="progress-bar bg-primary progress-bar-striped progress-bar-animated fs-5"
+                                                style="width: 75%">75%</div>
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- Current Work Space Card -->
+
+                            <!-- Due Today -->
+                            <div class="col-xl-3 col-md-6 mb-3">
+                                <div class="card mySummaryCard myCardAccent shadow p-3">
+
+                                    <div class="d-flex flex-row">
+                                        <p class="fs-4">Due Today</p>
+                                        <div class="d-flex flex-fill justify-content-end">
+                                            <p class="fs-4 text-black-50">Total Tasks: <strong
+                                                    class="text-black">11</strong> </p>
+                                        </div>
+                                    </div>
+
+                                    <div class>
+                                        <p class="p-1"> Total Number of Due today tasks is<strong class="ms-1">
+                                                11</strong>,
+                                            <strong class="mx-1"> 9 </strong> of them in current space.
+                                        </p>
+
+                                        <div class="d-flex">
+                                            <button class="btn myBtnAccent bgAccent flex-fill mx-1">Display All Due
+                                                Today</button>
+                                            <button class="btn myBtnAccent bgAccent flex-fill mx-1">Display Current
+                                                Space Due
+                                                Today</button>
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                </div>
+                            </div>
+                            <!-- Due Today -->
+
+                            <!-- High Priorty Tasks -->
+                            <div class="col-xl-3 col-md-6 mb-3">
+                                <div class="card mySummaryCard myCardPriortyHigh shadow p-3">
+
+                                    <div class="d-flex flex-row">
+                                        <p class="fs-4">High Priorty</p>
+                                        <div class="d-flex flex-fill justify-content-end">
+                                            <p class="fs-4 text-black-50">Total Tasks: <strong
+                                                    class="text-black">6</strong> </p>
+                                        </div>
+                                    </div>
+
+                                    <div class>
+                                        <p class="p-1"> Total Number of Due today tasks is<strong class="ms-1">
+                                                11</strong>,
+                                            <strong class="mx-1"> 9 </strong> of them in current space.
+                                        </p>
+
+                                        <div class="d-flex">
+                                            <button class="btn myBtnPriortyHigh bgAccent flex-fill mx-1">Display All Due
+                                                Today</button>
+                                            <button class="btn myBtnPriortyHigh bgAccent flex-fill mx-1">Display Current
+                                                Space Due
+                                                Today</button>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+
+                                <!-- High Priorty Tasks -->
+
+                            </div>
+
+
+
+                        </div>
+                        <!-- summary-board -->
+
+
+                        <!-- tasks-board -->
+
+
+
+                        <!-- tasks-board -->
+
+
+
+                    </div>
+                    <!-- dashboard -->
+
+                </div>
+                <!-- main container -->
+
+            </div>
+
+
+
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>

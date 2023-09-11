@@ -1,0 +1,152 @@
+:root {
+    --color-primary: hsl(226, 98%, 65%);
+    --color-secondary: #1A5666;
+    --color-extra: #79AEA3;
+    --color-accent: #F15BB5;
+    --color-accent-light: #F15BB548;
+
+    --color-priorty-high:#981717;
+
+    /*
+    #5B2E48
+   #F4E480
+   #6F9398
+      */
+}
+
+
+
+.txtPrimary {
+    color: var(--color-primary);
+}
+
+
+.txtSecondary {
+    color: var(--color-secondary);
+}
+
+.txtExtra {
+    color: var(--color-extra);
+}
+
+.txtAccent {
+    color: var(--color-accent);
+}
+
+
+.bgPrimary {
+    background-color: var(--color-primary);
+}
+
+
+.bgSecondary {
+    background-color: var(--color-secondary);
+}
+
+.bgExtra {
+    background-color: var(--color-extra);
+}
+
+.bgAccent {
+    background-color: var(--color-accent);
+}
+
+.fullHighetContainer {
+    height: 100vh;
+    height: 100dvh;
+
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+}
+
+.circular_image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: var(--color-primary);
+}
+
+.circular_image img {
+    width: 100%;
+}
+
+.burgerMenu {
+    rotate: 90deg;
+}
+
+.myBtn {
+    background-color: var(--color-secondary);
+}
+
+.myBtn:hover {
+    background-color: var(--color-primary)
+}
+
+
+.myBtnAccent {
+    color: #FFF;
+    background-color: var(--color-accent);
+}
+
+.myBtnAccent:hover {
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+
+
+.myBtnPriortyHigh {
+    color: #FFF;
+    background-color: var(--color-priorty-high);
+}
+
+.myBtnPriortyHigh:hover {
+    color: var(--color-priorty-high);
+    border: 1px solid var(--color-priorty-high);
+}
+
+
+
+
+.topControlPanalItems {
+    height: 38px;
+}
+
+.verticalLine {
+    border-left: 1px solid var(--color-secondary);
+    height: 38px;
+}
+
+.mySummaryCard {
+    height: 200px;
+    border-radius: 8px;
+}
+
+.myCardPrimary {
+    color: var(--color-primary);
+    border-left: 6px solid var(--color-primary);
+}
+
+.myCardSecondry {
+    color: var(--color-secondary);
+    border-left: 6px solid var(--color-secondary);
+}
+
+.myCardExtra {
+    color: var(--color-extra);
+    border-left: 6px solid var(--color-extra);
+}
+
+.myCardAccent {
+    color: var(--color-accent);
+    border-left: 6px solid var(--color-accent);
+}
+
+.myCardPriortyHigh {
+    color: var(--color-priorty-high);
+    border-left: 6px solid var(--color-priorty-high);
+}
+
+.myProgressBarLabel {
+    width: 144px;
+}
