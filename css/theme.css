@@ -5,12 +5,17 @@
     --color-accent: #F15BB5;
     --color-accent-light: #F15BB548;
 
-    --color-priorty-high:#981717;
+    --color-priority-high: #981717;
+    --color-priority-meduim: #f59e0b;
+    --color-priority-low: var(--color-extra);
 
     /*
-    #5B2E48
+   #5B2E48
    #F4E480
    #6F9398
+
+   #981717
+   
       */
 }
 
@@ -83,6 +88,15 @@
     background-color: var(--color-primary)
 }
 
+.myBtnPrimary {
+    color: #FFF;
+    background-color: var(--color-primary);
+}
+
+.myBtnPrimary:hover {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
 
 .myBtnAccent {
     color: #FFF;
@@ -95,18 +109,88 @@
 }
 
 
-.myBtnPriortyHigh {
+.myBtnStatusTodo {
+    width: 123px;
     color: #FFF;
-    background-color: var(--color-priorty-high);
+    background-color: var(--color-secondary);
 }
 
-.myBtnPriortyHigh:hover {
-    color: var(--color-priorty-high);
-    border: 1px solid var(--color-priorty-high);
+.myBtnStatusTodo:hover, .myBtnStatusTodo_Disabled {
+    color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+}
+
+
+.myBtnStatusInProgress {
+    width: 123px;
+    color: #FFF;
+    background-color: var(--color-accent);
+}
+
+.myBtnStatusInProgress:hover, .myBtnStatusInProgress_Disabled {
+    color: var(--color-accent);
+    border: 1px solid var(--color-accent);
+}
+
+
+.myBtnStatusDone {
+    width: 123px;
+    color: #FFF;
+    background-color: var(--color-primary);
+}
+
+.myBtnStatusDone:hover, .myBtnStatusDone_Disabled {
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
 }
 
 
 
+.myBtnPriorityHigh {
+    color: #FFF;
+    background-color: var(--color-priority-high);
+}
+
+.myBtnPriorityHigh:hover, .myBtnPriorityHigh_Disabled {
+    color: var(--color-priority-high);
+    border: 1px solid var(--color-priority-high);
+}
+
+
+.myBtnPriorityMedium {
+    color: #FFF;
+    background-color: var(--color-priority-meduim);
+}
+
+.myBtnPriorityMedium:hover, .myBtnPriorityMedium_Disabled {
+    color: var(--color-priority-meduim);
+    border: 1px solid var(--color-priority-meduim);
+}
+
+
+.myBtnPriorityLow {
+    color: #FFF;
+    background-color: var(--color-priority-low);
+}
+
+.myBtnPriorityLow:hover, .myBtnPriorityLow_Disabled {
+    color: var(--color-priority-low);
+    border: 1px solid var(--color-priority-low);
+}
+
+.myBtnSmall {
+    height: 38px;
+    width: 38px;
+}
+
+.myBtnFilter {
+    height: 38px;
+    width: 56px;
+}
+
+.myBtnPriority{
+    width: 90px;
+}
 
 .topControlPanalItems {
     height: 38px;
@@ -118,7 +202,7 @@
 }
 
 .mySummaryCard {
-    height: 200px;
+    height: 212px;
     border-radius: 8px;
 }
 
@@ -142,9 +226,9 @@
     border-left: 6px solid var(--color-accent);
 }
 
-.myCardPriortyHigh {
-    color: var(--color-priorty-high);
-    border-left: 6px solid var(--color-priorty-high);
+.myCardPriorityHigh {
+    color: var(--color-priority-high);
+    border-left: 6px solid var(--color-priority-high);
 }
 
 .myProgressBarLabel {
