@@ -72,6 +72,21 @@
     background-color: var(--color-primary);
 }
 
+/* Extra small < 576px
+Small ≥ 576px
+Medium ≥ 768px
+Large ≥ 992px
+X-Large ≥ 1200px
+XX-Large ≥ 1400px */
+
+@media screen and (max-width: 760px) {
+
+    #btnMentions, #btnAssignedToMe, #verticalLine {
+        display: none;
+    }
+
+}
+
 .circular_image img {
     width: 100%;
 }
