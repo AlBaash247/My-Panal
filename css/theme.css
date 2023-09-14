@@ -247,12 +247,13 @@
 }
 
 
-.overflowXAuto {
+.overflowXAuto {}
 
+
+#btnDisplayAllSpacesDueToday, #btnDisplayCurrentSpaceDueToday,
+#btnDisplyAllSpacesHighPriority, #btnDisplyCurrentSpacesHighPriority {
+   height: 100%;
 }
-
-
-
 
 
 /* ######## Adjest Design to Screen Size ######## */
@@ -295,9 +296,11 @@ XX-Large ≥ 1400px */
         display: none;
     }
 
-    #btnCredits{
-    margin-left: 0px;
+    #btnCredits {
+        margin-left: 0px;
     }
+
+
 
 }
 
@@ -330,10 +333,10 @@ XX-Large ≥ 1400px */
         width: 70%;
     }
 
-    #btnCredits{
+    #btnCredits {
         margin-left: 24px;
-        margin-right: 24px ;
-        }
+        margin-right: 24px;
+    }
 
 }
 
@@ -365,18 +368,18 @@ XX-Large ≥ 1400px */
 }
 
 
-@media screen and (max-width: 1124px){
+@media screen and (max-width: 1124px) {
     .overflowXAuto {
         overflow-x: auto;
         overflow-y: auto;
 
     }
 
-    .topSectionContainer{
+    .topSectionContainer {
         height: 300px;
     }
 
-    .btn{
+    .btn {
         height: 50px;
     }
 }
