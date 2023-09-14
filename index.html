@@ -9,7 +9,8 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <!-- TO-CHANGE -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login-modal.css">
+    <link rel="stylesheet" href="css/loging-form.css">
     <link rel="stylesheet" href="css/theme.css">
 
     <!-- TO-CHANGE -->
@@ -49,6 +50,10 @@
                             </button>
                         </div> -->
                         <!-- burgerMenu button -->
+
+                        <div class="d-flex align-items-center  justify-content-start p-0">
+                            <a id="btnCredits" class="btn myBtnAccent text-uppercase" href="credits.html">credits</a>
+                        </div>
 
                         <!-- search bar -->
                         <div class="topControlPanalItems flex-grow-1 d-flex justify-content-center">
@@ -116,6 +121,8 @@
                                     </svg>
                                 </button>
                                 <ul class="dropdown-menu">
+
+                                    <li><a id="btnLogin" class="dropdown-item" href="#"> Login/Register </a></li>
                                     <li><a class="dropdown-item" href="#">Profile</a></li>
                                     <li><a class="dropdown-item" href="#">Settings</a></li>
                                     <li><a class="dropdown-item" href="#">Metions</a></li>
@@ -370,19 +377,18 @@
 
                                 <!-- top-section -->
                                 <div
-                                    class="d-flex align-items-center w-100 py-2 px-3 border border-top-0 border-start-0 border-end-0 overflow-x-scroll">
+                                    class="d-flex topSectionContainer align-items-top w-100 py-2 px-3 border border-top-0 border-start-0 border-end-0 overflowXAuto">
 
                                     <div class="d-flex flex-fill justify-content-start">
 
-                                        <div class="dropdown">
+                                        <div id="btnSelectedSpaceDropdown" class="dropdown">
                                             <button class="btn myBtnPrimary dropdown-toggle fs-4" type="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
                                                 Current Space
                                             </button>
                                             <ul class="dropdown-menu">
-                                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                                <li><a class="dropdown-item" href="#">Current Space</a></li>
+
                                             </ul>
                                         </div>
 
@@ -399,7 +405,6 @@
 
                                     </div>
 
-
                                     <div class="d-flex flex-fill justify-content-center">
 
                                         <button id="btnFilterTodo" class="btn myBtnStatusTodo mx-1">TODO</button>
@@ -408,9 +413,6 @@
                                         <button id="btnFilterDone" class="btn myBtnStatusDone mx-1">DONE</button>
 
                                     </div>
-
-
-
 
                                     <div class="d-flex flex-fill justify-content-end">
                                         <button id="btnFilterHighPriorityTask"
@@ -421,7 +423,8 @@
                                             class="btn myBtnSmall myBtnPriorityLow mx-1">L</button>
 
                                         <div class="dropdown mx-1">
-                                            <button class="btn myBtn myBtnFilter dropdown-toggle p-0" type="button"
+                                            <button id="btnSortDropdown"
+                                                class="btn myBtn myBtnFilter dropdown-toggle p-0" type="button"
                                                 data-bs-toggle="dropdown" aria-expanded="false">
 
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -712,6 +715,96 @@
         </div>
     </div>
 
+    <!-- modal-login -->
+    <div id="MyLoginModalOverlay" class="modal-overlay">
+        <div id="MyLoginModal" class="modal">
+            <!-- close modal -->
+            <a id="btnMyLoginModalClose" class="close-modal">
+                <svg viewBox="0 0 20 20">
+                    <path fill="#000000"
+                        d="M15.898,4.045c-0.271-0.272-0.713-0.272-0.986,0l-4.71,4.711L5.493,4.045c-0.272-0.272-0.714-0.272-0.986,0s-0.272,0.714,0,0.986l4.709,4.711l-4.71,4.711c-0.272,0.271-0.272,0.713,0,0.986c0.136,0.136,0.314,0.203,0.492,0.203c0.179,0,0.357-0.067,0.493-0.203l4.711-4.711l4.71,4.711c0.137,0.136,0.314,0.203,0.494,0.203c0.178,0,0.355-0.067,0.492-0.203c0.273-0.273,0.273-0.715,0-0.986l-4.711-4.711l4.711-4.711C16.172,4.759,16.172,4.317,15.898,4.045z">
+                    </path>
+                </svg>
+            </a>
+            <!-- close modal -->
+
+            <!-- content -->
+            <div class="myLoginForm">
+
+
+
+                <!-- login form -->
+                <div class="myLoginFormChild px-5">
+
+                    <h1 class="display-4 mb-3">Login</h1>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+                    <div class="d-flex justify-content-end mb-5">
+                        <a href="#"> Forget Password </a>
+                    </div>
+
+
+                    <div class="d-flex justify-content-center px-2">
+                        <button id="btnFormLogin" class="btn myBtnPrimary text-uppercase flex-grow-1"> Login </button>
+                    </div>
+                </div>
+                <!-- login form -->
+
+                <!-- register form -->
+                <div class="myLoginFormChild px-5">
+
+                    <h1 class="display-4 mb-3">Register</h1>
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="user_name">
+                        <label for="floatingInput">Username</label>
+                    </div>
+
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        <label for="floatingInput">Email address</label>
+                    </div>
+                    <div class="form-floating mb-5">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        <label for="floatingPassword">Password</label>
+                    </div>
+
+
+                    <div class="d-flex justify-content-center px-2">
+                        <button id="btnFormLogin" class="btn myBtnPrimary text-uppercase flex-grow-1"> Register
+                        </button>
+                    </div>
+
+
+                </div>
+                <!-- register form -->
+
+                <div id="formOverlay" class="my-overlay">
+                    <buttn id="btnFormOverlayText" class="btn btn-lg btn-outline-light text-uppercase">
+                        Register
+                    </buttn>
+                </div>
+
+            </div>
+            <!-- content -->
+
+        </div><!-- modal -->
+    </div><!-- overlay -->
+
+    <!-- modal-login -->
+
+
+
+    <script src="scripts/index.js"></script>
+    <script src="scripts/login-form.js"></script>
+    <script type="module" src="scripts/login-modal.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"

@@ -189,7 +189,7 @@
     width: 56px;
 }
 
-.myBtnPriority{
+.myBtnPriority {
     width: 90px;
 }
 
@@ -228,22 +228,27 @@
     border-left: 6px solid var(--color-priority-high);
 }
 
-#btnAddTask{
-min-width: 124px;
+#btnAddTask {
+    min-width: 124px;
 }
 
-#inputSearchGroup{
+#inputSearchGroup {
     max-width: 400px;
 }
 
 
-.taskDueDate{
+.taskDueDate {
     min-width: 156px;
 }
 
-.taskTitle{
+.taskTitle {
     min-width: 224px;
     max-width: 424px;
+}
+
+
+.overflowXAuto {
+
 }
 
 
@@ -290,7 +295,9 @@ XX-Large ≥ 1400px */
         display: none;
     }
 
-    
+    #btnCredits{
+    margin-left: 0px;
+    }
 
 }
 
@@ -323,6 +330,11 @@ XX-Large ≥ 1400px */
         width: 70%;
     }
 
+    #btnCredits{
+        margin-left: 24px;
+        margin-right: 24px ;
+        }
+
 }
 
 /* for meduim screens */
@@ -350,4 +362,21 @@ XX-Large ≥ 1400px */
         width: 50%;
     }
 
+}
+
+
+@media screen and (max-width: 1124px){
+    .overflowXAuto {
+        overflow-x: auto;
+        overflow-y: auto;
+
+    }
+
+    .topSectionContainer{
+        height: 300px;
+    }
+
+    .btn{
+        height: 50px;
+    }
 }
