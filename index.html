@@ -52,7 +52,8 @@
                         <!-- burgerMenu button -->
 
                         <div class="d-flex align-items-center justify-content-start p-0">
-                            <a id="btnCredits" class="btn myBtnAccent topControlPanalItems text-uppercase" href="credits.html">credits</a>
+                            <a id="btnCredits" class="btn myBtnAccent topControlPanalItems text-uppercase"
+                                href="credits.html">credits</a>
                         </div>
 
                         <!-- search bar -->
@@ -295,10 +296,10 @@
 
                                         <div class="d-flex">
                                             <button id="btnDisplayAllSpacesDueToday"
-                                                class="btn myBtnAccent bgAccent flex-fill mx-1">Display All Due
+                                                class="btn myBtnAccent bgAccent flex-fill text-uppercase mx-1">Display All Due
                                                 Today</button>
                                             <button id="btnDisplayCurrentSpaceDueToday"
-                                                class="btn myBtnAccent bgAccent flex-fill mx-1">Display Space Due
+                                                class="btn myBtnAccent bgAccent flex-fill text-uppercase mx-1">Display Space Due
                                                 Today</button>
                                         </div>
 
@@ -334,10 +335,10 @@
 
                                         <div class="d-flex">
                                             <button id="btnDisplyAllSpacesHighPriority"
-                                                class="btn myBtnPriorityHigh bgAccent flex-fill mx-1">Display All
+                                                class="btn myBtnPriorityHigh bgAccent flex-fill text-uppercase mx-1">Display All
                                                 High Priority</button>
                                             <button id="btnDisplyCurrentSpacesHighPriority"
-                                                class="btn myBtnPriorityHigh bgAccent flex-fill mx-1">Display Space
+                                                class="btn myBtnPriorityHigh bgAccent flex-fill text-uppercase mx-1">Display Space
                                                 High Priority</button>
                                         </div>
 
@@ -393,7 +394,7 @@
                                         </div>
 
 
-                                        <button id="btnAddTask" class="btn myBtn mx-3 text-white">
+                                        <button id="btnAddTask" class="btn myBtn mx-3 text-uppercase text-white">
                                             Add Task
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFF"
                                                 class="bi bi-plus" viewBox="0 0 16 16">
@@ -407,8 +408,8 @@
 
                                     <div class="d-flex flex-fill justify-content-center">
 
-                                        <button id="btnFilterTodo" class="btn myBtnStatusTodo mx-1">TODO</button>
-                                        <button id="btnFilterInProgress" class="btn myBtnStatusInProgress mx-1">IN
+                                        <button id="btnFilterTodo" class="btn myBtnStatusTodo text-uppercase mx-1">TODO</button>
+                                        <button id="btnFilterInProgress" class="btn myBtnStatusInProgress text-uppercase mx-1">IN
                                             PROGRESS</button>
                                         <button id="btnFilterDone" class="btn myBtnStatusDone mx-1">DONE</button>
 
@@ -416,11 +417,11 @@
 
                                     <div class="d-flex flex-fill justify-content-end">
                                         <button id="btnFilterHighPriorityTask"
-                                            class="btn myBtnSmall myBtnPriorityHigh mx-1">H</button>
+                                            class="btn myBtnSmall myBtnPriorityHigh text-uppercase mx-1">H</button>
                                         <button id="btnFilterMeduimPriorityTask"
-                                            class="btn myBtnSmall myBtnPriorityMedium mx-1">M</button>
+                                            class="btn myBtnSmall myBtnPriorityMedium text-uppercase mx-1">M</button>
                                         <button id="btnFilterLowPriorityTask"
-                                            class="btn myBtnSmall myBtnPriorityLow mx-1">L</button>
+                                            class="btn myBtnSmall myBtnPriorityLow text-uppercase mx-1">L</button>
 
                                         <div class="dropdown mx-1">
                                             <button id="btnSortDropdown"
@@ -739,12 +740,19 @@
                     <h1 class="display-4 mb-3">Login</h1>
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <input id="inputLoginEmail" type="email" class="form-control"
+                            placeholder="name@example.com">
+                        <label for="inputLoginEmail">Email address</label>
+                        <div id="inputLoginEmailValidation" class="invalid-feedback">
+                            Please write your Email.
+                        </div>
                     </div>
                     <div class="form-floating">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <input id="inputLoginPassword" type="password" class="form-control" placeholder="Password">
+                        <label for="inputLoginPassword">Password</label>
+                        <div id="inputLoginPasswordValidation" class="invalid-feedback">
+                            Please write your Password.
+                        </div>
                     </div>
                     <div class="d-flex justify-content-end mb-5">
                         <a href="#"> Forget Password </a>
@@ -763,22 +771,31 @@
                     <h1 class="display-4 mb-3">Register</h1>
 
                     <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="floatingInput" placeholder="user_name">
-                        <label for="floatingInput">Username</label>
+                        <input id="inputRegisterFullName" type="text" class="form-control" placeholder="user_name">
+                        <label for="inputRegisterFullName">FullName</label>
+                        <div id="inputRegisterFullNameValidation" class="invalid-feedback">
+                            Please write your FullName.
+                        </div>
                     </div>
 
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                        <label for="floatingInput">Email address</label>
+                        <input id="inputRegisterEmail" type="email" class="form-control" placeholder="name@example.com">
+                        <label for="inputRegisterEmail">Email address</label>
+                        <div id="inputRegisterEmailValidation" class="invalid-feedback">
+                            Please write your Email.
+                        </div>
                     </div>
                     <div class="form-floating mb-5">
-                        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                        <label for="floatingPassword">Password</label>
+                        <input id="inputRegisterPassword" type="password" class="form-control"  placeholder="Password">
+                        <label for="inputRegisterPassword">Password</label>
+                        <div id="inputRegisterPasswordValidation" class="invalid-feedback">
+                            Please write your Password.
+                        </div>
                     </div>
 
 
                     <div class="d-flex justify-content-center px-2">
-                        <button id="btnFormLogin" class="btn myBtnPrimary text-uppercase flex-grow-1"> Register
+                        <button id="btnFormRegister" class="btn myBtnPrimary text-uppercase flex-grow-1"> Register
                         </button>
                     </div>
 
@@ -802,9 +819,9 @@
 
 
 
-    <script src="scripts/index.js"></script>
-    <script src="scripts/login-form.js"></script>
-    <script type="module" src="scripts/login-modal.js"></script>
+    <script src="controllers/index.js"></script>
+    <script src="controllers/login-form.js"></script>
+    <script type="module" src="controllers/login-modal.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
