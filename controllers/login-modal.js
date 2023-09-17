@@ -1,18 +1,21 @@
 import store2 from 'https://cdn.jsdelivr.net/npm/store2@2.14.2/+esm'
 
-let MyLoginModalOverlay = document.querySelector("#MyLoginModalOverlay");
-let MyLoginModal = document.querySelector("#MyLoginModal");
-
+let loginModalOverlay = document.querySelector("#loginModalOverlay");
+let loginModal = document.querySelector("#loginModal");
 let btnLogin = document.querySelector("#btnLogin");
-let btnMyLoginModalClose = document.querySelector("#btnMyLoginModalClose");
-
+let btnLoginModalClose = document.querySelector("#btnLoginModalClose");
 
 
 if (store2.get('isLoggedIn')) {
     initUI();
 } else {
     askToLogin();
-    displayModal();
+    displayLoginModal();
+}
+
+
+function initUI() {
+
 }
 
 function askToLogin() {
@@ -32,34 +35,39 @@ function askToLogin() {
     let btnFilterMeduimPriorityTask = document.querySelector('#btnFilterMeduimPriorityTask');
     let btnFilterHighPriorityTask = document.querySelector('#btnFilterHighPriorityTask');
 
-    btnMentions.onclick = function () { displayModal(); }
-    btnAssignedToMe.onclick = function () { displayModal(); }
-    btnDisplayAllSpacesDueToday.onclick = function () { displayModal(); }
-    btnDisplayCurrentSpaceDueToday.onclick = function () { displayModal(); }
-    btnDisplyAllSpacesHighPriority.onclick = function () { displayModal(); }
-    btnDisplyCurrentSpacesHighPriority.onclick = function () { displayModal(); }
-    btnSelectedSpaceDropdown.onclick = function () { displayModal(); }
-    btnAddTask.onclick = function () { displayModal(); }
-    btnFilterTodo.onclick = function () { displayModal(); }
-    btnFilterInProgress.onclick = function () { displayModal(); }
-    btnFilterDone.onclick = function () { displayModal(); }
-    btnFilterLowPriorityTask.onclick = function () { displayModal(); }
-    btnFilterMeduimPriorityTask.onclick = function () { displayModal(); }
-    btnFilterHighPriorityTask.onclick = function () { displayModal(); }
+    btnMentions.onclick = function () { displayLoginModal(); }
+    btnAssignedToMe.onclick = function () { displayLoginModal(); }
+    btnDisplayAllSpacesDueToday.onclick = function () { displayLoginModal(); }
+    btnDisplayCurrentSpaceDueToday.onclick = function () { displayLoginModal(); }
+    btnDisplyAllSpacesHighPriority.onclick = function () { displayLoginModal(); }
+    btnDisplyCurrentSpacesHighPriority.onclick = function () { displayLoginModal(); }
+    btnSelectedSpaceDropdown.onclick = function () { displayLoginModal(); }
+    btnAddTask.onclick = function () { displayLoginModal(); }
+    btnFilterTodo.onclick = function () { displayLoginModal(); }
+    btnFilterInProgress.onclick = function () { displayLoginModal(); }
+    btnFilterDone.onclick = function () { displayLoginModal(); }
+    btnFilterLowPriorityTask.onclick = function () { displayLoginModal(); }
+    btnFilterMeduimPriorityTask.onclick = function () { displayLoginModal(); }
+    btnFilterHighPriorityTask.onclick = function () { displayLoginModal(); }
 
 }
 
 
 btnLogin.onclick = function () {
-    displayModal();
+    displayLoginModal();
 }
 
-btnMyLoginModalClose.onclick = function () {
-    MyLoginModalOverlay.classList.remove('active');
-    MyLoginModal.classList.remove('active');
+
+function displayLoginModal() {
+    loginModalOverlay.classList.add('active');
+    loginModal.classList.add('active');
+}
+
+btnLoginModalClose.onclick = function () {
+    loginModalOverlay.classList.remove('active');
+    loginModal.classList.remove('active');
 };
 
-function displayModal() {
-    MyLoginModalOverlay.classList.add('active');
-    MyLoginModal.classList.add('active');
-}
+
+
+
