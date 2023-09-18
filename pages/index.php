@@ -8,9 +8,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
     <!-- TO-CHANGE -->
-    <link rel="stylesheet" href="css/login-modal.css">
-    <link rel="stylesheet" href="css/login-form.css">
-    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="../css/login-modal.css">
+    <link rel="stylesheet" href="../css/login-form.css">
+    <link rel="stylesheet" href="../css/theme.css">
 
     <!-- TO-CHANGE -->
 </head>
@@ -918,11 +918,11 @@
     <!-- modal-edit-task -->
 
 
-    <script src="controllers/index.js"></script>
-    <script src="controllers/login-form.js"></script>
-    <script type="module" src="controllers/login-modal.js"></script>
-    <script type="module" src="controllers/add-task-modal.js"></script>
-    <script type="module" src="controllers/edit-task-modal.js"></script>
+    <script src="../controllers/index.js"></script>
+    <script src="../controllers/login-form.js"></script>
+    <script type="module" src="../controllers/login-modal.js"></script>
+    <script type="module" src="../controllers/add-task-modal.js"></script>
+    <script type="module" src="../controllers/edit-task-modal.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
