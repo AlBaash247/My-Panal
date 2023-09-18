@@ -256,12 +256,16 @@
 }
 
 
- .myAddTaskSelect {
+.myAddTaskSelect {
     height: 58px;
 }
 
-.myAddTaskDesc{
+.myAddTaskDesc {
     max-height: 200px;
+}
+
+.pointer {
+    cursor: pointer;
 }
 
 /* ######## Adjest Design to Screen Size ######## */

@@ -406,7 +406,7 @@
                                         </thead>
                                         <tbody class="table-group-divider myTasksTable">
 
-                                            <tr id="taskRow_1" >
+                                            <tr id="taskRow_1" class="pointer">
                                                 <td id="taskId" scope="row" class="display-6 fs-4">1</td>
                                                 <td id="taskTitle" class="taskTitle  display-6 fs-4">Some TaskSome
                                                     TaskSome TaskSome</td>
@@ -422,7 +422,7 @@
                                                 <td id="taskDate" class="display-6 fs-4">12-SEP-2025</td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="pointer">
                                                 <td id="taskId" scope="row" class="display-6 fs-4">2</td>
                                                 <td id="taskTitle" class="taskTitle  display-6 fs-4">Some TaskSome
                                                     TaskSome TaskSome</td>
@@ -439,7 +439,7 @@
                                                 <td id="taskDate" class="display-6 fs-4">12-SEP-2025</td>
                                             </tr>
 
-                                            <tr>
+                                            <tr class="pointer">
                                                 <td id="taskId" scope="row" class="display-6 fs-4">3</td>
                                                 <td id="taskTitle" class="taskTitle  display-6 fs-4">Some TaskSome
                                                     TaskSome TaskSome</td>
