@@ -32,7 +32,7 @@ function loginVlidation() {
 	var inputLoginPassword = document.querySelector('#inputLoginPassword');
 
 	var email = inputLoginEmail.value;
-	var password = password;
+	var password = inputLoginPassword.value;
 
 	if (email == '' || email.length < 3) {
 		inputLoginEmail.classList.add('is-invalid');
