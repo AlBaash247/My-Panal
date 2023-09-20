@@ -31,14 +31,17 @@ function loginVlidation() {
 
 	var inputLoginPassword = document.querySelector('#inputLoginPassword');
 
-	if (inputLoginEmail.value == '' || inputLoginEmail.value.length < 3) {
+	var email = inputLoginEmail.value;
+	var password = password;
+
+	if (email == '' || email.length < 3) {
 		inputLoginEmail.classList.add('is-invalid');
 		inputLoginEmailValidation.innerText = " Please write your Email.";
 		return;
 	}
 	else {
 
-		if (!isEmailValid(inputLoginEmail.value)) {
+		if (!isEmailValid(email)) {
 			inputLoginEmail.classList.add('is-invalid');
 			inputLoginEmailValidation.innerText = "Invalid email format.";
 			return;
@@ -48,7 +51,7 @@ function loginVlidation() {
 
 	}
 
-	if (inputLoginPassword.value == '' || inputLoginPassword.value.length < 6) {
+	if (password == '' || password.length < 6) {
 		inputLoginPassword.classList.add('is-invalid');
 		return;
 	}
@@ -65,7 +68,12 @@ function RegisterVlidation() {
 	var inputRegisterEmailValidation = document.querySelector('#inputRegisterEmailValidation');
 	var inputRegisterPassword = document.querySelector('#inputRegisterPassword');
 
-	if (inputRegisterFullName.value == '') {
+	var fullName = inputRegisterFullName.value;
+	var email = inputRegisterEmail.value;
+	var password = inputRegisterPassword.value;
+
+
+	if (fullName == '') {
 		inputRegisterFullName.classList.add('is-invalid');
 		return;
 	}
@@ -73,12 +81,12 @@ function RegisterVlidation() {
 		inputRegisterFullName.classList.remove('is-invalid');
 	}
 
-	if (inputRegisterEmail.value == '' || inputRegisterEmail.value.length < 3) {
+	if (email == '' || email.length < 3) {
 		inputRegisterEmail.classList.add('is-invalid');
 		return;
 	}
 	else {
-		if (!isEmailValid(inputRegisterEmail.value)) {
+		if (!isEmailValid(email)) {
 			inputRegisterEmail.classList.add('is-invalid');
 			inputRegisterEmailValidation.innerText = "Invalid email format.";
 			return;
@@ -87,7 +95,7 @@ function RegisterVlidation() {
 		}
 	}
 
-	if (inputRegisterPassword.value == '' || inputRegisterPassword.value.length < 6) {
+	if (password == '' || password.length < 6) {
 		inputRegisterPassword.classList.add('is-invalid');
 		return;
 	}
