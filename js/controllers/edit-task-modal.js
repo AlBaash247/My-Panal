@@ -1,6 +1,7 @@
 import store2 from 'https://cdn.jsdelivr.net/npm/store2@2.14.2/+esm'
 
-// if (store2.get('isLoggedIn')) {
+var user = store2.namespace('user');
+// if (user.get('isLoggedIn').is_ok) {
     console.log("logged-in!");
     let editTaskModalOverlay = document.querySelector("#editTaskModalOverlay");
     let editTaskModal = document.querySelector("#editTaskModal");

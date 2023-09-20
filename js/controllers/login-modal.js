@@ -5,8 +5,17 @@ let loginModal = document.querySelector("#loginModal");
 let btnLogin = document.querySelector("#btnLogin");
 let btnLoginModalClose = document.querySelector("#btnLoginModalClose");
 
+btnLogin.onclick = function () {
+    displayLoginModal();
+}
 
-if (store2.get('isLoggedIn')) {
+btnLoginModalClose.onclick = function () {
+    closeLoginModal();
+};
+
+
+var user = store2.namespace('user');
+if (user.get('isLoggedIn').is_ok) {
     initUI();
 } else {
     askToLogin();
@@ -53,21 +62,16 @@ function askToLogin() {
 }
 
 
-btnLogin.onclick = function () {
-    displayLoginModal();
-}
-
-
 function displayLoginModal() {
     loginModalOverlay.classList.add('active');
     loginModal.classList.add('active');
 }
 
-btnLoginModalClose.onclick = function () {
+
+export function closeLoginModal() {
     loginModalOverlay.classList.remove('active');
     loginModal.classList.remove('active');
-};
-
+}
 
 
 
