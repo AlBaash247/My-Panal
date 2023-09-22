@@ -918,8 +918,7 @@
     <!-- modal-edit-task -->
 
 
-    <script src="../js/controllers/index.js"></script>
-    <script src="../js/controllers/login-form.js"></script>
+    <script type="module" src="../js/controllers/login-form.js"></script>
     <script type="module" src="../js/controllers/login-modal.js"></script>
     <script type="module" src="../js/controllers/add-task-modal.js"></script>
     <script type="module" src="../js/controllers/edit-task-modal.js"></script>
